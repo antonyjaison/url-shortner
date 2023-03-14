@@ -76,8 +76,8 @@ const UrlShortner = () => {
               <div className="copy_link">
                 <p
                   onClick={() =>
-                    copy(`https://vermillion-marzipan-6c3737.netlify.app/${data.shortUrl}`).then(() => {
-                      window.location.href = `https://vermillion-marzipan-6c3737.netlify.app/${data.shortUrl}`;
+                    copy(`https://url-shortner-ochre-rho.vercel.app/${data.shortUrl}`).then(() => {
+                      window.location.href = `https://url-shortner-ochre-rho.vercel.app/${data.shortUrl}`;
                     })
                   }
                 >
