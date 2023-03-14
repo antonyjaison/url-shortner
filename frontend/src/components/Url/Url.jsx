@@ -8,7 +8,7 @@ const Url = () => {
 
   useLayoutEffect(() => {
     const getUrl = async () => {
-      const response = await fetch(`http://localhost:4000${location.pathname}`);
+      const response = await fetch(`https://url-shortner-t0vu.onrender.com${location.pathname}`);
       const json = await response.json();
       console.log(json);
       if (json === "") {

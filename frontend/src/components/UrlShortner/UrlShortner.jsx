@@ -23,7 +23,7 @@ const UrlShortner = () => {
     if (url.length > 0) {
       axios({
         method: "post",
-        url: "http://localhost:4000/api/url/",
+        url: "https://url-shortner-t0vu.onrender.com/api/url/",
         data: { longUrl: url },
       }).then((response) => {
         setUrlData((prev) => [response.data, ...prev]);
@@ -76,8 +76,8 @@ const UrlShortner = () => {
               <div className="copy_link">
                 <p
                   onClick={() =>
-                    copy(`http://127.0.0.1:5173/${data.shortUrl}`).then(() => {
-                      window.location.href = `http://127.0.0.1:5173/${data.shortUrl}`;
+                    copy(`https://vermillion-marzipan-6c3737.netlify.app/${data.shortUrl}`).then(() => {
+                      window.location.href = `https://vermillion-marzipan-6c3737.netlify.app/${data.shortUrl}`;
                     })
                   }
                 >
